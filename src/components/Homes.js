@@ -2,32 +2,35 @@ import React from "react";
 import logo from "../../public/png/Home Logo.png";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import AnimatedText from "./AnimatedText";
 
 const Homes = () => {
   return (
-    <>
-      <div className="flex items-center justify-center py-32 w-screen h-[80vh]">
-
+    
+      <div className="flex items-center justify-center w-auto h-[50rem] px-5 -mt-10">
         {/* logo */}
         <motion.div
           className="absolute opacity-60 z-0"
           animate={{ y: [-5, 5, -5] }} // Animate the 'y' position in a loop
           transition={{ duration: 4, repeat: Infinity }} // Animation duration and repeat
         >
-          <Image src={logo} alt="" class="w-40% h-40% object-cover" />
+          <Image src={logo} alt="" class="w-10% h-10% object-cover " />
         </motion.div>
 
         {/* Centre Text */}
         <div className="flex flex-col items-center justify-center  z-10 relative">
-          <h2 className="font-bold text-5xl text-center pb-4">
-            美式整脊技术之ISAT
-          </h2>
-          <h2 className="font-bold text-5xl text-center py-4">
-            脈衡脊骨肌肉神经活化整疗技术
-          </h2>
-          <h2 className="font-bold text-4xl text-center py-4">
-            Impulse Subluxation Adjusting Technique
-          </h2>
+          <AnimatedText
+            text="美式整脊技术之ISAT"
+            className="font-bold text-5xl text-center pb-4"
+          />
+          <AnimatedText
+            text="脈衡脊骨肌肉神经活化整疗技术"
+            className="font-bold text-5xl text-center py-4"
+          />
+          <AnimatedText
+            text="Impulse Subluxation Adjusting Technique"
+            className="font-bold text-4xl text-center py-4"
+          />
 
           <h2 className="py-2 text-primary font-semibold">Dr. Lim Kim Seah</h2>
 
@@ -56,7 +59,7 @@ const Homes = () => {
           </div>
         </div>
       </div>
-    </>
+    
   );
 };
 

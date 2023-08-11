@@ -24,7 +24,7 @@ const router = useRouter();
 
 const NavBar = () => {
   return (
-    <header className="w-full px-32 py-8 font-medium flex justify-between items-center">
+    <header className="w-full px-32 py-4 font-medium flex justify-between items-center">
       <nav>
         <CustomLink href="/" title="Home" className="mr-4" />
         <CustomLink href="/a" title="About" className="mx-4" />
