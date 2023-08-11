@@ -3,6 +3,7 @@ import logo from "../../public/png/Home Logo.png";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import AnimatedText from "./AnimatedText";
+import Link from "next/link";
 
 const Homes = () => {
   return (
@@ -13,7 +14,7 @@ const Homes = () => {
         animate={{ y: [-5, 5, -5] }} // Animate the 'y' position in a loop
         transition={{ duration: 4, repeat: Infinity }} // Animation duration and repeat
       >
-        <Image src={logo} alt="" class="w-10% h-10% object-cover -mt-10" />
+        <Image src={logo} alt="" className="w-10% h-10% object-cover -mt-10" />
       </motion.div>
 
       {/* Centre Text */}
@@ -31,7 +32,11 @@ const Homes = () => {
           className="font-bold text-4xl text-center py-4"
         />
 
-        <h2 className="py-2 text-primary font-semibold">Dr. Lim Kim Seah</h2>
+        <h2 className="py-2 text-primary font-semibold">
+          <Link href="/profile">
+            Dr. Lim Kim Seah - <span className="underline">View Profile</span>
+          </Link>
+        </h2>
 
         {/* Button */}
         <div className="flex items-center space-x-4 pt-4">

@@ -38,7 +38,7 @@ const About = () => {
             animate={{ y: [-5, 5, -5] }} // Animate the 'y' position in a loop
             transition={{ duration: 4, repeat: Infinity }} // Animation duration and repeat
           >
-            <Image src={activator} alt="activator" class="w-40 h-auto -mt-5" />
+            <Image src={activator} alt="activator" className="w-40 h-auto -mt-5" />
           </motion.div>
         </div>
       </div>

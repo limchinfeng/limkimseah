@@ -1,13 +1,10 @@
-import Head from 'next/head'
-import Homes from '@/components/Homes'
-import Layout from '@/components/Layout'
-import About from '@/components/About';
-import Diagnosis from '@/components/Diagnosis';
-import SpinalCondition from '@/components/SpinalCondition';
+import Layout from '@/components/Layout';
 import Introduce from '@/components/Introduce';
+import Head from 'next/head';
+import React from 'react'
+import Location from '@/components/Location';
 
-
-export default function Home() {
+const profile = () => {
   return (
     <>
       <Head>
@@ -19,14 +16,13 @@ export default function Home() {
       <main>
         <Layout>
           <div>
-            <Homes />
-            <About />
-            <Diagnosis />
-            <SpinalCondition />
             <Introduce />
+            <Location />
           </div>
         </Layout>
       </main>
     </>
   );
 }
+
+export default profile

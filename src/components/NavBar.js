@@ -27,8 +27,13 @@ const NavBar = () => {
     <header className="w-full px-32 py-4 font-medium flex justify-between items-center">
       <nav>
         <CustomLink href="/" title="Home" className="mr-4" />
-        <CustomLink href="/a" title="About" className="mx-4" />
-        <CustomLink href="/a" title="Contact" className="ml-4" />
+        <CustomLink href="/profile" title="Profile" className="mx-4" />
+        <CustomLink
+          href="https://api.whatsapp.com/send?phone=125312283&text=I%20would%20like%20to%20schedule%20an%20appointment%20for%20a%20therapy%20treatment"
+          target="_blank"
+          title="Contact"
+          className="ml-4"
+        />
       </nav>
 
       <Logo />

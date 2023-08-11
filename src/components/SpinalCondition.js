@@ -26,7 +26,7 @@ const SpinalCondition = () => {
   });
   return (
     <>
-      <div className="w-full flex flex-col justify-center items-center text-center pt-24 pb-10">
+      <div className="w-full flex flex-col justify-center items-center text-center pt-24 pb-24">
         <div className="pb-10">
           <h2 className="font-bold text-5xl text-center py-4 text-primary">
             脊椎疾病的范围
@@ -36,14 +36,14 @@ const SpinalCondition = () => {
           </h2>
         </div>
         <div className="grid w-3/5 grid-cols-4 gap-5 justify-center">
-          <Condition description="腰痛 Low back pain" />
-          <Condition description="背痛 Back pain" />
-          <Condition description="頸痛 Neck pain" />
-          <Condition description="肩痛 Shoulder" />
-          <Condition description="神經痛 Muscle tension" />
-          <Condition description="肌肉緊張 Muscle tension" />
-          <Condition description="骨刺 bone spur" />
-          <Condition description="脊椎侧弯 scoliosis" />
+          <Condition description="腰痛 Low Back Pain" />
+          <Condition description="背痛 Back Pain" />
+          <Condition description="頸痛 Neck Pain" />
+          <Condition description="肩痛 Shoulder Pain" />
+          <Condition description="神經痛 Nerve Pain" />
+          <Condition description="肌肉緊張 Muscle Tension" />
+          <Condition description="骨刺 Bone Spur" />
+          <Condition description="脊椎侧弯 Scoliosis" />
         </div>
 
         <motion.h2
