@@ -34,31 +34,39 @@ const NavBar = () => {
       <Logo />
 
       <nav className="flex items-center justify-center flex-wrap">
-        <motion.a href="/" target="_blank"
-            whileHover={{y: -2}}
-            whileTap={{scale:0.9}}
-            className='mr-3'
+        <motion.a
+          href="https://api.whatsapp.com/send?phone=125312283&text=I%20would%20like%20to%20schedule%20an%20appointment%20for%20a%20therapy%20treatment"
+          target="_blank"
+          whileHover={{ y: -2 }}
+          whileTap={{ scale: 0.9 }}
+          className="mr-3"
         >
           <CallIcon />
         </motion.a>
-        <motion.a href="mailto:limchinfeng@gmail.com" target="_blank"
-            whileHover={{y: -2}}
-            whileTap={{scale:0.9}}
-            className='mx-3'
+        <motion.a
+          href="mailto:limchinfeng@gmail.com"
+          target="_blank"
+          whileHover={{ y: -2 }}
+          whileTap={{ scale: 0.9 }}
+          className="mx-3"
         >
           <Gmail />
         </motion.a>
-        <motion.a href="https://www.linkedin.com/in/lim-chin-feng/" target="_blank"
-            whileHover={{y: -2}}
-            whileTap={{scale:0.9}}
-            className='mx-3'
+        <motion.a
+          href="https://www.linkedin.com/in/lim-chin-feng/"
+          target="_blank"
+          whileHover={{ y: -2 }}
+          whileTap={{ scale: 0.9 }}
+          className="mx-3"
         >
           <LinkedInIcon />
         </motion.a>
-        <motion.a href="https://github.com/limchinfeng" target="_blank"
-            whileHover={{y: -2}}
-            whileTap={{scale:0.9}}
-            className='ml-3'
+        <motion.a
+          href="https://github.com/limchinfeng"
+          target="_blank"
+          whileHover={{ y: -2 }}
+          whileTap={{ scale: 0.9 }}
+          className="ml-3"
         >
           <GithubIcon />
         </motion.a>
