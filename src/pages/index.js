@@ -2,6 +2,9 @@ import Image from 'next/image'
 import Head from 'next/head'
 import Homes from '@/components/Homes'
 import Layout from '@/components/Layout'
+import About from '@/components/About';
+import Diagnosis from '@/components/Diagnosis';
+import SpinalCondition from '@/components/SpinalCondition';
 
 
 export default function Home() {
@@ -15,8 +18,12 @@ export default function Home() {
       </Head>
       <main className="">
         <Layout>
-          <Homes />
-          
+          <div>
+            <Homes />
+            <About />
+            <Diagnosis />
+            <SpinalCondition />
+          </div>
         </Layout>
       </main>
     </>
