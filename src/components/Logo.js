@@ -8,7 +8,7 @@ const MotionLink = motion(Link);
 
 const Logo = () => {
   return (
-    <div className="flex items-center justify-center">
+    <div className="w-20 lg:w-[4.5rem] md:w-16">
       {/* <MotionLink
         href="/"
         className="w-52 h-14 bg-dark text-primaryDark flex items-center justify-center rounded-full
@@ -27,15 +27,15 @@ const Logo = () => {
         }}
       >
         <motion.div
-          className="rounded-2xl border-2 border-solid border-dark bg-light w-20 "
+          className="rounded-2xl border-2 border-solid border-dark bg-light "
           whileHover={{
             scale: 1.05,
           }}
         >
           <Image
             src={mainLogo}
-            alt="Profile Picture"
-            className="w-full h-auto rounded-lg p-2"
+            alt="Logo"
+            className="w-auto h-auto rounded-lg p-2"
           />
         </motion.div>
       </Link>

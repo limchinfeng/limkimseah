@@ -1,13 +1,14 @@
 import React from 'react'
-import Footer from './Footer';
-import NavBar from './NavBar';
 
 const Layout = ({children, className=""}) => {
   return (
-    <div className={`w-full flex flex-col min-h-screen z-0 bg-light ${className}`}>
-      <NavBar />
-      <div className='flex-grow items-center justify-center flex'>{children}</div>
-      <Footer />
+    
+    <div className={`w-full h-full inline-block z-0 bg-light
+    px-24 py-20
+    lg:px-12 
+    sm:px-8   
+    ${className}`}>
+      {children}
     </div>
   );
 }
