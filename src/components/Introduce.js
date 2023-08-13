@@ -6,6 +6,8 @@ import ScrollTrigger from "react-scroll-trigger";
 import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLocationDot } from "@fortawesome/free-solid-svg-icons";
+import { motion } from "framer-motion";
+import mainLogo from "../../public/png/Logo.png";
 
 const Introduce = () => {
   const [counterOn, setCounterOn] = useState(false);
@@ -21,7 +23,7 @@ const Introduce = () => {
           </h2>
         </div>
 
-        <div className="grid w-2/3 h-auto grid-cols-5 gap-20 justify-center">
+        <div className="grid w-[50rem] grid-cols-5 gap-20 justify-center">
           <div className="col-span-2 rounded-2xl border-2 border-solid border-dark border-r-8 border-b-8">
             <Image
               src={profilePic}
@@ -51,7 +53,7 @@ const Introduce = () => {
               </div>
             </div>
 
-            <ScrollTrigger
+            {/* <ScrollTrigger
               onEnter={() => setCounterOn(true)}
               // onExit={() => setCounterOn(false)}
             >
@@ -89,7 +91,23 @@ const Introduce = () => {
                   <h2 className="text-lg font-medium text-dark/75">Clients</h2>
                 </div>
               </div>
-            </ScrollTrigger>
+            </ScrollTrigger> */}
+
+            <motion.div
+              whileHover={{
+                scale: 1.05,
+              }}
+              className="rounded-2xl border-2 border-solid border-dark bg-light w-24 h-auto "
+            >
+              <Image
+                src={mainLogo}
+                alt="Profile Picture"
+                className="w-full h-auto rounded-lg p-2"
+                whileHover={{
+                  scale: 1.05,
+                }}
+              />
+            </motion.div>
 
             <div className="flex items-center space-x-4 pt-10">
               <a

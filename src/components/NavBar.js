@@ -36,7 +36,7 @@ const NavBar = () => {
         />
       </nav>
 
-      <Logo />
+      <Logo /> 
 
       <nav className="flex items-center justify-center flex-wrap">
         <motion.a

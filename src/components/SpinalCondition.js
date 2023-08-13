@@ -44,6 +44,8 @@ const SpinalCondition = () => {
           <Condition description="肌肉緊張 Muscle Tension" />
           <Condition description="骨刺 Bone Spur" />
           <Condition description="脊椎侧弯 Scoliosis" />
+          <Condition description="坐骨神经 Sciatic Nerve" />
+          <Condition description="小中风 Mini-Stroke" />
         </div>
 
         <motion.h2
