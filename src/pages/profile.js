@@ -15,6 +15,7 @@ const profile = () => {
           ISAT is a spinal cord correction technique that uses an activator to apply precise force to the spine, realigning the spinal joints and clearing the nerves, thereby improving pain and discomfort in various parts of the body."
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="googlebot" content="index,follow" />
         <link rel="icon" href="favicon.ico" />
       </Head>
       <main>
