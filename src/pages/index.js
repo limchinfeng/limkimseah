@@ -4,16 +4,20 @@ import Layout from '@/components/Layout'
 import About from '@/components/About';
 import Diagnosis from '@/components/Diagnosis';
 import SpinalCondition from '@/components/SpinalCondition';
-import Introduce from '@/components/Introduce';
 import Location from '@/components/Location';
+import Logo from '../../public/png/Home Logo.png'
 
 
 export default function Home() {
   return (
     <>
       <Head>
-        <title>Lim Kim Seah</title>
-        <meta name="description" content="" />
+        <title>Home | Impulse Subluxation Adjusting Technique</title>
+        <meta
+          name="description"
+          content="ISAT 是一種利用活化器對脊椎施加精準的力度，使脊椎關節回正、神經通暢，進而改善身體各部位疼痛、不適的療法。
+          ISAT is a spinal cord correction technique that uses an activator to apply precise force to the spine, realigning the spinal joints and clearing the nerves, thereby improving pain and discomfort in various parts of the body."
+        />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
