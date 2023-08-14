@@ -14,21 +14,21 @@ const Introduce = () => {
   return (
     <>
       <div
-        className="w-full flex flex-col justify-center items-center text-center py-4
-      lg:py-0
+        className="w-full flex flex-col justify-center items-center text-center pb-14 md:pb-10
+      
       "
       >
-        <div className="pb-10">
-          <h2 className="font-bold text-5xl text-center py-2 text-primary md:text-4xl xs:text-3xl">
+        <div>
+          <h2 className="font-bold text-4xl text-center py-2 text-primary md:text-3xl xs:text-2xl">
             林医师
           </h2>
-          <h2 className="font-bold text-4xl text-center text-primary md:text-3xl xs:text-2xl">
+          <h2 className="font-bold text-3xl text-center text-primary md:text-2xl xs:text-xl">
             Meet Dr. Lim
           </h2>
         </div>
         <div>
           <div
-            className="flex flex-row justify-center items-center gap-8 md:flex-col
+            className="flex flex-row justify-center items-center gap-8 pt-8 md:pt-6 md:flex-col sm:pt-4
           "
           >
             {/* <div className="col-span-2 rounded-2xl border-2 border-solid border-dark border-r-8 border-b-8">
@@ -44,8 +44,10 @@ const Introduce = () => {
               whileHover={{
                 scale: 1.05,
               }}
-              className="rounded-2xl border-2 border-solid border-dark bg-light w-52 h-auto items-center justify-center flex
-              xs:w-44
+              className="rounded-2xl border-2 border-solid border-dark bg-light w-52 h-auto items-center 
+              justify-center flex
+              md:w-44
+              xs:w-40 
               "
             >
               <Image
@@ -136,8 +138,8 @@ const Introduce = () => {
                   className="flex items-center bg-dark text-light p-3 px-6
               rounded-2xl text-base font-semibold hover:bg-transparent hover:text-dark
               border-2 border-solid border-transparent hover:border-dark
-              md:text-sm
-              xs:text-xs
+              md:text-xs
+              xs:px-4 
               "
                 >
                   联系我
@@ -148,8 +150,8 @@ const Introduce = () => {
                   className="flex items-center bg-dark text-light p-3 px-5
               rounded-2xl text-base font-semibold hover:bg-transparent hover:text-dark
               border-2 border-solid border-transparent hover:border-dark
-              md:text-sm
-              xs:text-xs
+              md:text-xs
+              xs:px-4
               "
                 >
                   Contact

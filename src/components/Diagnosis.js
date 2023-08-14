@@ -5,16 +5,36 @@ import Lilcon from "./Lilcon";
 const Details = ({ title, descriptionC, descriptionE }) => {
     const ref = useRef(null);
   return (
-    <li ref={ref} className="my-8 first:mt-0 last:mb-0 w-[60%] text-left text-xl mx-auto flex flex-col items-center justify-center">
+    <li
+      ref={ref}
+      className="my-8 first:mt-0 last:mb-0 w-[75%] text-left text-xl mx-auto flex
+      lg:w-[80%] 
+      "
+    >
       <Lilcon reference={ref} />
       <motion.div
-      initial={{y:50}}
-      whileInView={{y:0}}
-      transition={{duration:0.5, type:"string"}}
+        initial={{ y: 50 }}
+        whileInView={{ y: 0 }}
+        transition={{ duration: 0.5, type: "string" }}
       >
-        <h2 className="text-2xl font-semibold pb-2">{title}</h2>
-        <p className="py-1">{descriptionC}</p>
-        <p className="pt-1">{descriptionE}</p>
+        <h2 className="text-2xl font-semibold pb-2
+          sm:text-lg
+          xs:text-md   
+        ">{title}</h2>
+        <p
+          className="py-1 lg:text-lg lg:w-full
+          sm:text-base
+          xs:text-sm"
+        >
+          {descriptionC}
+        </p>
+        <p
+          className="pt-1 lg:text-lg lg:w-full
+          sm:text-base
+          xs:text-sm"
+        >
+          {descriptionE}
+        </p>
       </motion.div>
     </li>
   );
@@ -29,23 +49,24 @@ const Diagnosis = () => {
 
   return (
     <>
-      <div className="w-full flex flex-col justify-center items-center text-center pt-10 pb-24">
-        <div className="pb-14">
-          <h2 className="font-bold text-5xl text-center py-4 text-primary">
+      <div className="w-full flex flex-col justify-center items-center text-center pb-28 md:pb-20 sm:pb-14 ">
+        <div className="pb-14 md:pb-10 xs:pb-6">
+          <h2 className="font-bold text-4xl text-center py-2 text-primary md:text-3xl xs:text-2xl">
             ISAT疗法
           </h2>
-          <h2 className="font-bold text-4xl text-center pb-4  text-primary">
+          <h2 className="font-bold text-3xl text-center text-primary md:text-2xl xs:text-xl">
             Diagnosis and Treatment
           </h2>
         </div>
 
-        <div ref={ref} className="w-[60%] mx-auto relative">
-          <motion.div 
-            className="absolute left-9 top-0 w-[4px] h-full bg-dark origin-top" 
-            style={{scaleY:scrollYProgress}}
+        <div ref={ref} className="w-[75%] mx-auto relative md:w-full">
+          <motion.div
+            className="absolute left-9 top-0 w-[4px] h-full bg-dark origin-top
+            md:w-[2px] md:left-[30px] xs:left-[20px]"
+            style={{ scaleY: scrollYProgress }}
           />
 
-          <ul className="w-full flex flex-col items-start justify-between ml-4">
+          <ul className="w-full flex flex-col items-start justify-between ml-4 md:ml-2">
             <Details
               title="診斷 Diagnosis"
               descriptionC="醫師會先進行詳細的問診和身體檢查，以確定患者的疼痛或不適原因"

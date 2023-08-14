@@ -5,6 +5,7 @@ import About from '@/components/About';
 import Diagnosis from '@/components/Diagnosis';
 import SpinalCondition from '@/components/SpinalCondition';
 import Introduce from '@/components/Introduce';
+import Location from '@/components/Location';
 
 
 export default function Home() {
@@ -23,7 +24,7 @@ export default function Home() {
             <About />
             <Diagnosis />
             <SpinalCondition />
-            <Introduce />
+            <Location />
           </div>
         </Layout>
       </main>

@@ -17,6 +17,7 @@ const profile = () => {
         <Layout>
           <div className='flex flex-col justify-center items-center'>
             <Introduce />
+            <div className='h-14'/>
             <Location />
           </div>
         </Layout>

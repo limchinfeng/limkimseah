@@ -6,7 +6,9 @@ const Footer = () => {
     <footer className="bottom-0 border-t-2 border-solid border-dark bg-light">
       <div className="w-full px-24 py-4 font-medium flex gap-4 justify-between text-center  
       lg:px-14
-      md:flex-col md:text-sm">
+      md:flex-col 
+      md:text-sm
+      xs:text-xs">
         <span>
           By &nbsp;
           <Link

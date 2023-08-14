@@ -8,8 +8,13 @@ const Lilcon = ({ reference }) => {
   });
 
   return (
-    <figure className="absolute left-0 stroke-dark -mt-28">
-      <svg className="-rotate-90" width="75" height="75" viewBox="0 0 100 100">
+    <figure className="absolute left-0 stroke-dark md:-mt-1.5 sm:-mt-2 xs:mt-1
+    
+
+    ">
+      <svg className="-rotate-90
+      md:w-[60px] xs:w-[40px] xs:h-[40px] 
+      " width="75" height="75" viewBox="0 0 100 100">
         <circle
           cx="75"
           cy="50"

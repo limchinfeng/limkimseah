@@ -5,18 +5,22 @@ import { faLocationDot } from "@fortawesome/free-solid-svg-icons";
 const Location = () => {
   return (
     <div
-      className="flex flex-col justify-center items-center pt-24 w-full pb-4
+      className="w-full flex flex-col justify-center items-center pb-14 md:pb-10
       
     "
     >
-      <h2 className="font-bold text-5xl text-center py-2 text-primary md:text-4xl xs:text-3xl">地址</h2>
-      <h2 className="font-bold text-4xl text-center text-primary md:text-3xl xs:text-2xl">
+      <h2 className="font-bold text-4xl text-center py-2 text-primary md:text-3xl xs:text-2xl">
+        地址
+      </h2>
+      <h2 className="font-bold text-3xl text-center text-primary md:text-2xl xs:text-xl">
         Where Are We
       </h2>
 
-      <div className="flex justify-center items-center pt-10 pb-5 
-      md:pt-5
-      sm:flex-col sm:gap-1">
+      <div
+        className="flex justify-center items-center py-5
+      sm:flex-col sm:gap-1 sm:py-3
+      xs:gap-0" 
+      >
         <FontAwesomeIcon icon={faLocationDot} className="h-auto w-4 md:w-3" />
         <h2 className="pl-2 underline w-full text-center text-base md:text-sm">
           <a
