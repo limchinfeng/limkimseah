@@ -7,7 +7,7 @@ const Details = ({ title, descriptionC, descriptionE }) => {
   return (
     <li
       ref={ref}
-      className="my-8 first:mt-0 last:mb-0 w-[75%] text-left text-xl mx-auto flex
+      className="my-8 first:mt-0 last:mb-0 w-[75%] text-justify text-xl mx-auto flex
       lg:w-[80%] 
       "
     >
@@ -17,10 +17,14 @@ const Details = ({ title, descriptionC, descriptionE }) => {
         whileInView={{ y: 0 }}
         transition={{ duration: 0.5, type: "string" }}
       >
-        <h2 className="text-2xl font-semibold pb-2
+        <h2
+          className="text-2xl font-semibold pb-2
           sm:text-lg
           xs:text-md   
-        ">{title}</h2>
+        "
+        >
+          {title}
+        </h2>
         <p
           className="py-1 lg:text-lg lg:w-full
           sm:text-base
@@ -66,7 +70,7 @@ const Diagnosis = () => {
             style={{ scaleY: scrollYProgress }}
           />
 
-          <ul className="w-full flex flex-col items-start justify-between ml-4 md:ml-2">
+          <ul className="w-full flex flex-col items-start justify-between ml-4 md:ml-2 ">
             <Details
               title="診斷 Diagnosis"
               descriptionC="醫師會先進行詳細的問診和身體檢查，以確定患者的疼痛或不適原因"
