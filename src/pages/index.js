@@ -20,6 +20,7 @@ export default function Home() {
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="googlebot" content="index,follow" />
+        <meta name="google-site-verification" content="J84kB3agXhZuI-643qT4PpOFAqmn_M46dgl8K_MUQ9M" />
         <link rel="icon" href="favicon.ico" />
       </Head>
       <main>
