@@ -61,7 +61,6 @@ const NavBar = () => {
     lg:px-16 lg:py-4
     md:py-2
     sm:px-8
-
     "
     >
       <button
