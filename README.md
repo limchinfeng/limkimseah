@@ -1,13 +1,18 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://limkimseah.com/">
-    <img src="/public/png/Logo.png" alt="Logo" width="200" height="300">
-  </a>
-
-  <h3 align="center">美式整脊技术之ISAT</h3>
-  <h3 align="center">脈衡脊骨肌肉神经活化整疗技术</h3>
-  <h3 align="center">Impulse Subluxation Adjusting Technique </h3>
+  <div>
+    <a href="https://limkimseah.com/">
+      <img src="/public/png/readme-logo.png" alt="Logo" width="200" height="300">
+    </a>
+    &nbsp; &nbsp;
+    <a>
+      <img src="/public/png/readme-ISAP.png" alt="Logo" width="300" height="300">
+    </a>
+  </div>
+  <h1 align="center">美式整脊技术之ISAT</h3>
+  <h1 align="center">脈衡脊骨肌肉神经活化整疗技术</h3>
+  <h2 align="center">Impulse Subluxation Adjusting Technique </h3>
   <br />
 
   <p align="center" style="text-align: justify; text-justify: inter-word;">
@@ -24,6 +29,7 @@
 
 <br />
 <br />
+
 ### Built With
 
 * [![Next][Next.js]][Next-url]
